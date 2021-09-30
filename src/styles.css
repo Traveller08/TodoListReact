@@ -1,4 +1,78 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+}
+.task-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+.task {
+  display: flex;
+  height: max-content;
+  align-items: center;
+  box-shadow: 0.1px 0.1px 5px 0.01px rgba(0, 0, 0, 0.5);
+  width: 80vw;
+  margin-top: 10px;
+
+  border-radius: 7px;
+  position: relative;
+}
+.text {
+  display: flex;
+  margin-left: 20px;
+  width: 70vw;
+}
+#edit {
+  border-radius: 0px;
+  background-color: rgb(86, 243, 86);
+}
+.btn {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: none;
+  padding: 10px 20px;
+  float: right;
+  background-color: rgba(236, 29, 29, 0.836);
+}
+.btn:hover,
+.add:hover {
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+.task div {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+input[type="text"] {
+  border: none;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 5px 50px;
+  font-size: 20px;
+}
+.add {
+  border: none;
+  padding: 5px 30px;
+  font-size: 20px;
+  border-radius: 7px;
+  background-color: rgb(50, 163, 255);
+}
+.add:hover {
+  cursor: pointer;
 }
